@@ -12,7 +12,7 @@
 html {
   font-size: 16px;
   background-color: #f4f4f4;
-  background: url(/images/wood.webp);
+  background: url(../images/wood.webp);
   background-size: cover;
   font-family: 'Silian Rail', serif;
   letter-spacing: 0.05rem;
