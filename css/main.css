@@ -1,0 +1,176 @@
+/*
+  Patrick Bateman Business Card Website Template
+  github.com/taylorsudo/patrick-bateman
+*/
+
+@font-face {
+  font-family: Silian Rail;
+  src: url(silian-rail.woff2);
+  font-display: swap
+}
+
+html {
+  font-size: 16px;
+  background-color: #f4f4f4;
+  background: url(/images/wood.webp);
+  background-size: cover;
+  font-family: 'Silian Rail', serif;
+  letter-spacing: 0.05rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card-stack {
+  position: relative;
+  max-width: 25rem;
+  width: calc(100% - 3rem);
+  height: 12.5rem;
+}
+
+.card-layer {
+  position: absolute;
+  max-width: 25rem;
+  width: calc(100% - 3rem);
+  height: 12.5rem;
+  background: url(../images/paper.webp);
+  background-size: contain;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.1);
+  border: 0.0625rem solid #eee;
+  padding: 1.25rem;
+  transition: transform 0.5s ease;
+}
+
+.card-layer:nth-child(3) {
+  bottom: -4rem;
+  z-index: 1;
+  transform: rotate(-4deg);
+}
+
+.card-layer:nth-child(3):hover {
+  transform: rotate(-6deg);
+}
+
+.card-layer:nth-child(2) {
+  bottom: -3.5rem;
+  z-index: 2;
+  transform: rotate(-3deg);
+}
+
+.card-layer:nth-child(2):hover {
+  transform: rotate(-5deg);
+}
+
+.card-layer:nth-child(1) {
+  bottom: -3rem;
+  z-index: 3;
+  transform: rotate(-2deg);
+}
+
+.card-layer:nth-child(1):hover {
+  transform: rotate(-4deg);
+}
+
+.card {
+  position: relative;
+  max-width: 25rem;
+  width: calc(100% - 2rem);
+  height: 12.5rem;
+  background: url(../images/paper.webp);
+  background-size: contain;
+  box-shadow: 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.15);
+  border: 0.0625rem solid #ddd;
+  padding: 1.25rem;
+  z-index: 4;
+}
+
+.card>div, h1, h2, a {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 
+    0px 1px 1px rgba(255, 255, 255, 0.9),
+    0px -1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.top-left {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  font-size: 1rem;
+}
+
+.top-right {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  text-align: right;
+  font-size: 1rem;
+}
+
+.top-right>span {
+  display: block;
+  font-size: 0.55rem;
+}
+
+.name {
+  width: 100%;
+  position: absolute;
+  top: calc(50% - 0.8rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.position {
+  width: 100%;
+  position: absolute;
+  top: calc(50% + 0.8rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  right: 1.25rem;
+  font-size: 0.65rem;
+  text-align: center;
+}
+
+.bottom>li {
+  display: inline-block;
+}
+
+.bottom>li::after {
+  content: '\00B7';
+}
+
+.bottom>li:last-child::after {
+  content: none;
+}
+
+a.credit {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  font-size: 1rem;
+  color: white;
+  text-shadow: none;
+}
