@@ -1,4 +1,6 @@
-# Patrick Bateman Business Card Website Template
+# Patrick Bateman Website Template
+
+![Patrick Bateman Business Card Website Template](preview.webp)
 
 Patrick Bateman's business card, in the form of a website template.
 
