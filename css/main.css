@@ -148,9 +148,7 @@ a:hover {
 .bottom {
   position: absolute;
   bottom: 1.25rem;
-  left: 1.25rem;
-  right: 1.25rem;
-  font-size: 0.65rem;
+  font-size: 0.625rem;
   text-align: center;
 }
 
