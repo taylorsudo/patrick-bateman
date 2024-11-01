@@ -146,8 +146,11 @@ a:hover {
 }
 
 .bottom {
+  width: 100%;
   position: absolute;
   bottom: 1.25rem;
+  left: 50%;
+  transform: translate(-50%);
   font-size: 0.625rem;
   text-align: center;
 }
